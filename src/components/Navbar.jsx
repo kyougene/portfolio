@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="w-full">
       {/* primary */}
-      <div className="hidden lg:flex h-[10vh] w-full fixed bg-primary backdrop-blur-[2px] text-white">
+      <div className="hidden lg:flex h-[10vh] w-full fixed top-0 left-0 z-10 bg-primary backdrop-blur-[2px] text-white">
         <div className="w-1/2 h-full flex justify-start items-center ml-52">
           Logo
         </div>
@@ -26,7 +26,7 @@ const Navbar = () => {
         </ul>
       </div>
       {/* secondary */}
-      <div className="lg:hidden h-[10vh] w-full fixed bg-primary text-white">
+      <div className="lg:hidden h-[10vh] w-full fixed top-0 left-0 z-10 bg-primary text-white">
         {/* Mobile navigation toggle */}
         <div className="flex h-full items-center justify-between mr-4">
           <div className="ml-5">Logo</div>
@@ -59,7 +59,7 @@ const Navbar = () => {
         }`}
       >
         <div className="px-8 mb-7 text-center">
-          <div className="flex flex-col justify-end gap-8 font-bold tracking-wider">
+          <div className="flex flex-col justify-end gap-8 font-bold tracking-wider ">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Work</a>
