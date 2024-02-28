@@ -7,3 +7,8 @@
   height: 100vh;
   width: 100vw;
 }
+
+#header {
+  background-image: url("./src/assets/oceanbg.svg");
+  background-size: cover;
+}

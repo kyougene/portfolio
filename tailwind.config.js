@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#181818",
+        hoverColor: "rgba(48, 60, 169)",
       },
       boxShadow: {
         imgShadow: "0 0 20px rgba(0, 0, 0, 0.1)",
