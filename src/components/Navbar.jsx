@@ -6,23 +6,18 @@ const Navbar = () => {
   return (
     <nav className="w-full">
       {/* primary */}
-      <div className="hidden lg:flex h-[10vh] w-full fixed top-0 left-0 z-10 bg-primary backdrop-blur-[2px] text-white">
+      <div className="hidden lg:flex h-[10vh] w-full fixed top-0 left-0 z-10 bg-[rgba(242, 245, 250, 1)] backdrop-blur-[4px] text-gray-500">
         <div className="w-1/2 h-full flex justify-start items-center ml-52">
           Logo
         </div>
         <ul className="w-1/2 h-full mr-52 flex justify-end items-center gap-10">
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="Contact">Contact</a>
-          </li>
+          {["About", "Skills", "Work", "Contact"].map((item, index) => {
+            return (
+              <li className="hover:text-hoverColor" key={index}>
+                <a href={`#${item.toLowerCase()}`}>{item}</a>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {/* secondary */}
