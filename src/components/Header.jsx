@@ -80,10 +80,10 @@ const Header = () => {
 
             <div className="px-4 py-8 border-white rounded-[15px] flex-col mt-12 items-center w-auto shadow-imgShadow">
               <p className="p-text w-full uppercase text-right">
-                Software Engineer
+                Software Engineer 🧑‍💻
               </p>
-              <p className="p-text w-full uppercase text-right">Tokyo, Japan</p>
-              <p className="p-text w-full uppercase text-right">ENG/日本語</p>
+              <p className="w-full uppercase text-right">Tokyo, Japan 🇯🇵</p>
+              <p className="w-full uppercase text-right">ENG/日本語 ✅</p>
             </div>
           </div>
         </motion.div>
@@ -105,7 +105,7 @@ const Header = () => {
           whileInView={scaleVariants.whileInView}
           className="w-1/4 flex flex-col justify-evenly items-start h-full ml-4"
         >
-          <div className="w-[100px] h-[100px] rounded-[50%] bg-white shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg">
+          <div className="w-[100px] h-[100px] rounded-[50%] bg-white shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
             <a href="https://github.com/kyougene" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ const Header = () => {
               </svg>
             </a>
           </div>
-          <div className="w-[100px] h-[100px] rounded-[50%] bg-white shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg">
+          <div className="w-[100px] h-[100px] rounded-[50%] bg-white shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
             <a href="https://www.linkedin.com/in/kaihasuike/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
