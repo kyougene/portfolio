@@ -7,6 +7,10 @@ import git from "../assets/git.png";
 import figma from "../assets/figma.png";
 import typescript from "../assets/typescript.png";
 import node from "../assets/node.png";
+import jacareview from "../assets/jacareview.png";
+import jacareview2 from "../assets/jacareview2.png";
+import jacareview3 from "../assets/jacareview3.png";
+import jacareview4 from "../assets/jacareview4.png";
 
 export default {
   react,
@@ -18,4 +22,8 @@ export default {
   figma,
   typescript,
   node,
+  jacareview,
+  jacareview2,
+  jacareview3,
+  jacareview4,
 };
