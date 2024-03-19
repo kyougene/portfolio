@@ -13,7 +13,7 @@ const Navbar = () => {
         <ul className="w-1/2 h-full mr-52 flex justify-end items-center gap-10">
           {["About", "Skills", "Work", "Contact"].map((item, index) => {
             return (
-              <li className="hover:text-white" key={index}>
+              <li className="hover:text-gray-500" key={index}>
                 <a href={`#${item.toLowerCase()}`}>{item}</a>
               </li>
             );

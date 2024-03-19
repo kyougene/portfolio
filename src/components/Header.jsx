@@ -53,7 +53,7 @@ const Header = () => {
   });
 
   return (
-    <div className="w-[100vw] h-[100vh]" id="header">
+    <div className="w-[100vw] h-[100vh] overflow-hidden" id="header">
       <div className="p-24 flex flex-1 h-full w-full justify-between">
         <motion.div
           className="w-1/3 h-full flex flex-col items-start justify-start"
@@ -96,7 +96,7 @@ const Header = () => {
             ref={firstImage}
             src={developer}
             alt="Hero Text"
-            className="w-[220px] object-contain z-1 absolute top-[50%] left-[50%] transform translate-x-[-30%]"
+            className="w-[220px] object-contain absolute top-[50%] left-[50%] transform translate-x-[-30%]"
           />
         </motion.div>
 
