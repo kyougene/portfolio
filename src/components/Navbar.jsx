@@ -11,7 +11,7 @@ const Navbar = () => {
           Logo
         </div>
         <ul className="w-1/2 h-full mr-52 flex justify-end items-center gap-10">
-          {["About", "Skills", "Work", "Contact"].map((item, index) => {
+          {["Skills", "Work", "Contact"].map((item, index) => {
             return (
               <li className="hover:text-gray-500" key={index}>
                 <a href={`#${item.toLowerCase()}`}>{item}</a>
@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
       </div>
       {/* secondary */}
-      <div className="lg:hidden h-[10vh] w-full fixed top-0 left-0 z-10 bg-primary text-white">
+      <div className="lg:hidden h-[10vh]  w-full fixed top-0 left-0 z-10 bg-primary text-white">
         {/* Mobile navigation toggle */}
         <div className="flex h-full items-center justify-between mr-4">
           <div className="ml-5">Logo</div>
@@ -49,13 +49,12 @@ const Navbar = () => {
       </div>
       {/* mobile navigation */}
       <div
-        className={`lg:hidden fixed bg-transparent w-full top-[10vh] origin-top duration-700 text-white ${
+        className={`lg:hidden bg-primary z-50 fixed w-full top-[10vh] origin-top duration-700 text-white ${
           !isOpen ? "hidden" : "block"
         }`}
       >
         <div className="px-8 mb-7 text-center">
           <div className="flex flex-col justify-end gap-8 font-bold tracking-wider ">
-            <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Work</a>
             <a href="#contact">Contact</a>

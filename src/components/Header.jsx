@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import react from "../assets/react.png";
-import figma from "../assets/figma.png";
 import developer from "../assets/developer.png";
-import bgimg from "../assets/bgimg.png";
 import hackerEffect from "../utils/hackerEffect";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 
 const scaleVariants = {
   whileInView: {
@@ -48,21 +45,19 @@ const Header = () => {
         iteration += 1 / 2;
       }, 45);
     };
-
-    console.log(name);
   });
 
   return (
     <div className="w-[100vw] h-[100vh] overflow-hidden" id="header">
-      <div className="p-24 flex flex-1 h-full w-full justify-between">
+      <div className="p-24 flex flex-col sm:flex-row flex-1 h-full w-full justify-between">
         <motion.div
-          className="w-1/3 h-full flex flex-col items-start justify-start"
+          className="w-full sm:w-1/3 h-full mt-4 flex flex-col items-start justify-start"
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="w-full flex flex-col items-end">
             <div
-              className="px-4 py-8 border-white rounded-[15px] flex items-end justify-center w-3/5 shadow-imgShadow"
+              className=" px-4 py-8 border-white rounded-[15px] w-full sm:w-3/5 flex items-end justify-center shadow-imgShadow"
               onMouseEnter={() => {
                 hackerEffect({ target: name.current });
               }}
@@ -78,7 +73,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="px-4 py-8 border-white rounded-[15px] flex-col mt-12 items-center w-auto shadow-imgShadow">
+            <div className="px-4 py-8 z-99 border-white rounded-[15px] flex-col mt-12 items-center w-full sm:w-auto shadow-imgShadow">
               <p className="p-text w-full uppercase text-right">
                 Software Engineer 🧑‍💻
               </p>
@@ -90,7 +85,7 @@ const Header = () => {
         <motion.div
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 0.5, delayChildren: 0.2 }}
-          className="h-full w-1/3 absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-2/3 flex items-end justify-between "
+          className="h-full hidden sm:flex w-1/3 absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-2/3 items-end justify-between "
         >
           <img
             ref={firstImage}
@@ -103,7 +98,7 @@ const Header = () => {
         <motion.div
           variant={scaleVariants}
           whileInView={scaleVariants.whileInView}
-          className="w-1/4 flex flex-col justify-evenly items-start h-full ml-4"
+          className="w-full sm:w-1/4 flex flex-row sm:flex-col justify-evenly items-start h-full"
         >
           <div className="w-[100px] h-[100px] rounded-[50%] bg-white shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
             <a href="https://github.com/kyougene" target="_blank">
