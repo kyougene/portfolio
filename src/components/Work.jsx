@@ -4,21 +4,22 @@ import WorkCard from "./WorkCard";
 
 const Work = () => {
   return (
-    <section className="bg-primaryBg p-12 w-full h-auto flex flex-col justify-center">
-      <h2 className="text-4xl font-bold text-center">PROJECTS</h2>
+    <section id="work" className="bg-primaryBg p-12 w-full">
+      <h2 className="text-4xl font-bold text-center mb-8">MY WORK</h2>
 
-      <div className="mt-4 flex justify-center items-center flex-wrap ">
+      <div className="flex flex-wrap justify-center">
         {workData.map((data, index) => {
           return (
-            <WorkCard
-              key={index}
-              title={data.title}
-              description={data.description}
-              imagesArray={data.images}
-              source={data.codeLink}
-              link={data.projectLink}
-              techStack={data.techStack}
-            />
+            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <WorkCard
+                title={data.title}
+                description={data.description}
+                imagesArray={data.images}
+                source={data.codeLink}
+                link={data.projectLink}
+                techStack={data.techStack}
+              />
+            </div>
           );
         })}
       </div>

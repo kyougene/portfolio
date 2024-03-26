@@ -11,6 +11,9 @@ import jacareview from "../assets/jacareview.png";
 import jacareview2 from "../assets/jacareview2.png";
 import jacareview3 from "../assets/jacareview3.png";
 import jacareview4 from "../assets/jacareview4.png";
+import boxedIn from "../assets/boxedIn.png";
+import boxedIn2 from "../assets/boxedIn2.png";
+import boxedIn3 from "../assets/boxedIn3.png";
 
 export default {
   react,
@@ -26,4 +29,7 @@ export default {
   jacareview2,
   jacareview3,
   jacareview4,
+  boxedIn,
+  boxedIn2,
+  boxedIn3,
 };
