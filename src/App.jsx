@@ -1,4 +1,4 @@
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Skills />
       <Work />
-      <Contact />
+      <Footer />
     </>
   );
 }

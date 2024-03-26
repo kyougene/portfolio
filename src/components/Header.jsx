@@ -48,7 +48,7 @@ const Header = () => {
   });
 
   return (
-    <div className="w-[100vw] h-[100vh] overflow-hidden" id="header">
+    <div className="w-[100vw] h-[100vh]" id="header">
       <div className="p-24 flex flex-col sm:flex-row flex-1 h-full w-full justify-between">
         <motion.div
           className="w-full sm:w-1/3 h-full mt-4 flex flex-col items-start justify-start"
