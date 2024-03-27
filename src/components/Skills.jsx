@@ -9,7 +9,7 @@ const Skills = () => {
       className="bg-primaryBg p-12 w-full h-auto flex flex-col justify-center z-50"
       id="skills"
     >
-      <h2 className="text-4xl font-bold text-center">SKILLSET</h2>
+      <h2 className="text-4xl font-bold text-center">Skillset</h2>
 
       <div className="mt-4 flex w-full">
         <motion.div

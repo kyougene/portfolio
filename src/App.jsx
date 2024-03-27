@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Header from "./components/Header";
+import Contributions from "./components/Contributions";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Skills />
       <Work />
+      <Contributions />
       <Footer />
     </>
   );
