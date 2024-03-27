@@ -14,6 +14,8 @@ import jacareview4 from "../assets/jacareview4.png";
 import boxedIn from "../assets/boxedIn.png";
 import boxedIn2 from "../assets/boxedIn2.png";
 import boxedIn3 from "../assets/boxedIn3.png";
+import javco from "../assets/javco.png";
+import javco2 from "../assets/javco2.png";
 
 export default {
   react,
@@ -32,4 +34,6 @@ export default {
   boxedIn,
   boxedIn2,
   boxedIn3,
+  javco,
+  javco2,
 };

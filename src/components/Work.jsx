@@ -5,7 +5,7 @@ import WorkCard from "./WorkCard";
 const Work = () => {
   return (
     <section id="work" className="bg-primaryBg p-12 w-full">
-      <h2 className="text-4xl font-bold text-center mb-8">MY WORK</h2>
+      <h2 className="text-4xl font-bold text-center mb-8">My Work</h2>
 
       <div className="flex flex-wrap justify-center">
         {workData.map((data, index) => {

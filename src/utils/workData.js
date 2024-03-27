@@ -9,6 +9,15 @@ export default [
     images: ["jacareview", "jacareview2", "jacareview3", "jacareview4"],
   },
   {
+    title: "Javco Trailers Inc",
+    techStack: "Next, Tailwind, Node, PostgesSQL, Prisma",
+    description:
+      "Professional landing page created for Javco Trailers Inc, currently being used in production",
+    projectLink: "https://www.javco.co/",
+    codeLink: "https://github.com/Javco-Trailers/javco",
+    images: ["javco", "javco2"],
+  },
+  {
     title: "Boxed IN",
     techStack: "React, Node, Knex, PostgreSQL",
     description:
