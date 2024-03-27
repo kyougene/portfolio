@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/Kai.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,10 @@ const Navbar = () => {
           className="w-1/2 h-full flex justify-start items-center ml-52 cursor-pointer"
           onClick={() => scrollToSection("header")}
         >
-          Logo
+          <img src={logo} alt="Logo" />
         </div>
         <ul className="w-1/2 h-full mr-52 flex justify-end items-center gap-10">
-          {["Skills", "Work", "Contact"].map((item, index) => {
+          {["Skills", "Work", "Contributions", "Contact"].map((item, index) => {
             return (
               <li className="hover:text-gray-500" key={index}>
                 <a
@@ -39,10 +40,16 @@ const Navbar = () => {
         </ul>
       </div>
       {/* secondary */}
-      <div className="lg:hidden h-[10vh]  w-full fixed top-0 left-0 z-10 bg-primary text-white">
+      <div className="lg:hidden h-[10vh]  w-full fixed top-0 left-0 z-10 bg-transparent backdrop-blur-[4px] text-black">
         {/* Mobile navigation toggle */}
         <div className="flex h-full items-center justify-between mr-4">
-          <div className="ml-5">Logo</div>
+          <div
+            className="w-1/2 h-full flex justify-start items-center ml-4 cursor-pointer"
+            onClick={() => scrollToSection("header")}
+          >
+            <img src={logo} alt="Logo" />
+          </div>
+
           <button
             onClick={() => {
               setIsOpen(!isOpen);
@@ -66,24 +73,54 @@ const Navbar = () => {
         </div>
       </div>
       {/* mobile navigation */}
+
       <div
-        className={`lg:hidden bg-primary z-50 fixed w-full top-[10vh] origin-top duration-700 text-white ${
-          !isOpen ? "hidden" : "block"
+        className={`lg:hidden bg-transparent backdrop-blur-[4px] z-50 fixed w-full top-0 text-black origin-top transform transition-transform duration-700 ${
+          isOpen ? `translate-y-20` : `-translate-y-full`
         }`}
       >
-        <div className="px-8 mb-7 text-center">
-          <div className="flex flex-col justify-end gap-8 font-bold tracking-wider ">
-            <a href="#skills" onClick={() => scrollToSection("skills")}>
-              Skills
-            </a>
-            <a href="#projects" onClick={() => scrollToSection("projects")}>
-              Work
-            </a>
-            <a href="#contact" onClick={() => scrollToSection("contact")}>
-              Contact
-            </a>
+        {isOpen && (
+          <div className="h-full px-8">
+            <div className="flex flex-col items-center justify-end h-full gap-8 font-bold tracking-wider">
+              <a
+                href="#skills"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("skills");
+                }}
+              >
+                Skills
+              </a>
+              <a
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("projects");
+                }}
+              >
+                Work
+              </a>
+              <a
+                href="#contributions"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("contributions");
+                }}
+              >
+                Contributions
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("contact");
+                }}
+              >
+                Contact
+              </a>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </nav>
   );
