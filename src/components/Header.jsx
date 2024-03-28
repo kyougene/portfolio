@@ -61,7 +61,7 @@ const Header = () => {
         >
           <div className="w-full flex z-50 flex-col items-end">
             <div
-              className=" px-4 py-8 border-white rounded-[15px] w-full sm:w-3/5 flex items-end justify-center shadow-imgShadow"
+              className=" px-4 py-8 bg-white border-white rounded-[15px] w-full sm:w-3/5 flex items-end justify-center shadow-imgShadow"
               onMouseEnter={() => {
                 hackerEffect({ target: name.current });
               }}
@@ -77,7 +77,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="px-4 py-8 border-white rounded-[15px] flex-col mt-12 items-center w-full sm:w-auto shadow-imgShadow">
+            <div className="px-4 py-8 bg-white border-white rounded-[15px] flex-col mt-12 items-center w-full sm:w-auto shadow-imgShadow">
               <p className="p-text w-full uppercase text-right">
                 Software Engineer 🧑‍💻
               </p>
