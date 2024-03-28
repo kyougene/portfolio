@@ -59,7 +59,7 @@ const Header = () => {
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="w-full flex flex-col items-end">
+          <div className="w-full flex z-50 flex-col items-end">
             <div
               className=" px-4 py-8 border-white rounded-[15px] w-full sm:w-3/5 flex items-end justify-center shadow-imgShadow"
               onMouseEnter={() => {
@@ -77,7 +77,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="px-4 py-8 z-99 border-white rounded-[15px] flex-col mt-12 items-center w-full sm:w-auto shadow-imgShadow">
+            <div className="px-4 py-8 border-white rounded-[15px] flex-col mt-12 items-center w-full sm:w-auto shadow-imgShadow">
               <p className="p-text w-full uppercase text-right">
                 Software Engineer 🧑‍💻
               </p>
@@ -102,7 +102,7 @@ const Header = () => {
         <motion.div
           variant={scaleVariants}
           whileInView={scaleVariants.whileInView}
-          className="w-full sm:w-1/4 flex flex-row sm:flex-col justify-evenly items-start h-full"
+          className="w-full sm:w-1/4 mt-4 flex flex-row sm:flex-col justify-evenly items-start h-full"
         >
           <div className="w-[100px] h-[100px] rounded-[50%] bg-white shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
             <a href="https://github.com/kyougene" target="_blank">
