@@ -59,7 +59,7 @@ const Header = () => {
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="w-full flex z-50 flex-col items-end">
+          <div className="w-full flex flex-col items-end">
             <div
               className=" px-4 py-8 bg-white border-white rounded-[15px] w-full sm:w-3/5 flex items-end justify-center shadow-imgShadow"
               onMouseEnter={() => {
