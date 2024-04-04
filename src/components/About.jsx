@@ -12,10 +12,12 @@ const Skills = () => {
       <h2 className="text-4xl font-bold text-center">About</h2>
 
       <div className="mt-4 bg-white bg-opacity-20 flex flex-col w-full p-12">
-        <div className="flex w-full justify-center">
-          <div className="w-1/2 mr-4">
-            <h3 className="text-lg font-medium text-center">WHO AM I?</h3>
-            <p className="mt-4 text-center text-black">
+        <div className="flex flex-col sm:flex-row w-full items-center justify-center">
+          <div className="order-2 sm:order-1 w-1/2 mr-4">
+            <h3 className="text-lg mt-4 sm:mt-0 font-medium text-center">
+              WHO AM I?
+            </h3>
+            <p className="mt-4 w-full text-center text-black">
               Hi! My name's Kai and I'm a half Japanese half African American
               Software Engineer living in Japan. I've grown up in both the US
               and Japan and speak Japanese and English fluently. I recently
@@ -55,7 +57,7 @@ const Skills = () => {
           </div>
           <img
             src={images.profile}
-            className="w-[300px] h-[300px] rounded-full justify-self-center self-center"
+            className="w-[300px] h-[300px] order-1 sm:order-2 rounded-full justify-self-center self-center"
             alt=""
           />
         </div>
