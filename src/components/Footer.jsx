@@ -44,13 +44,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-primaryBg p-8">
-      <h2 className="text-4xl font-bold text-center mb-8">Connect With Me</h2>
+    <section id="contact" className="bg-primaryBg p-4 sm:p-8">
+      <h2 className="text-2xl sm:text-4xl font-bold text-center mb-4 sm:mb-8">
+        Connect With Me
+      </h2>
       <div className="flex flex-col justify-center items-center">
-        <div>
-          <h3 className="text-xl font-bold mb-4">Find me here!</h3>
-          <motion.div className="w-full sm:w-1/4 flex flex-row justify-evenly items-start h-full">
-            <div className="w-[50px] h-[50px] mx-2 rounded-[50%] bg-transparent shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
+        <div className="w-full sm:w-3/4">
+          <h3 className="text-xl text-center sm:text-2xl font-bold mb-4">
+            Find me here!
+          </h3>
+          <div className="flex flex-row justify-center items-start h-full">
+            <div className="w-[50px] h-[50px] mx-2 sm:mx-4 rounded-[50%] bg-transparent shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
               <a href="https://github.com/kyougene" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +66,7 @@ const Contact = () => {
                 </svg>
               </a>
             </div>
-            <div className="w-[50px] h-[50px] mx-2 rounded-[50%] bg-transparent shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
+            <div className="w-[50px] h-[50px] mx-2 sm:mx-4 rounded-[50%] bg-transparent shadow-imgShadow flex justify-center items-center transition-transform hover:scale-110 hover:shadow-lg hover:cursor-pointer">
               <a href="https://www.linkedin.com/in/kaihasuike/" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,13 +78,13 @@ const Contact = () => {
                 </svg>
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
-        <div className="w-1/2 mt-4">
-          <h3 className="text-xl font-bold mb-4 text-center">
+        <div className="w-full sm:w-3/4 mt-4">
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
             Or message me here!
           </h3>
-          <form ref={form} onSubmit={handleSubmit} className="max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Name
