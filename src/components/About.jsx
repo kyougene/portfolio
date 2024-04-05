@@ -11,13 +11,13 @@ const Skills = () => {
     >
       <h2 className="text-4xl font-bold text-center">About</h2>
 
-      <div className="mt-4 bg-white bg-opacity-20 flex flex-col w-full p-12">
+      <div className="mt-4 bg-white bg-opacity-20 flex flex-col w-full p-4 sm:p-12">
         <div className="flex flex-col sm:flex-row w-full items-center justify-center">
-          <div className="order-2 sm:order-1 w-1/2 mr-4">
-            <h3 className="text-lg mt-4 sm:mt-0 font-medium text-center">
+          <div className="order-2 sm:order-1 w-full sm:w-1/2 mr-4">
+            <h3 className="text-lg mt-4 sm:mt-0 font-bold text-center">
               WHO AM I?
             </h3>
-            <p className="mt-4 w-full text-center text-black">
+            <p className="mt-4 text-center text-black">
               Hi! My name's Kai and I'm a half Japanese half African American
               Software Engineer living in Japan. I've grown up in both the US
               and Japan and speak Japanese and English fluently. I recently
@@ -26,9 +26,7 @@ const Skills = () => {
               programming, I enjoy working out and collecting interesting
               teapots and yunomi. <br /> Thanks for visiting my page!
             </p>
-            <h3 className="text-lg text-center font-medium mt-4">
-              MY SKILLSET
-            </h3>
+            <h3 className="text-lg text-center font-bold mt-4">MY SKILLSET</h3>
             <motion.div
               className="flex flex-1 flex-wrap justify-center items-start mx-0 mt-2"
               key="skills"
@@ -37,7 +35,7 @@ const Skills = () => {
                 <motion.div
                   whileInView={{ opacity: [0, 1] }}
                   transition={{ duration: 0.5 }}
-                  className={` flex flex-col  m-4 text-center transition-all duration-300 ease-in-out bg-[${skill.bgColor}]`}
+                  className={` flex flex-col m-2 sm:m-4 text-center transition-all duration-300 ease-in-out bg-[${skill.bgColor}]`}
                   key={skill.name}
                 >
                   <div
@@ -57,7 +55,7 @@ const Skills = () => {
           </div>
           <img
             src={images.profile}
-            className="w-[300px] h-[300px] order-1 sm:order-2 rounded-full justify-self-center self-center"
+            className="w-[200px] h-[200px] order-1 sm:order-2 rounded-full justify-self-center self-center mt-4 sm:mt-0"
             alt=""
           />
         </div>
